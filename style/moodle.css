@@ -1,0 +1,137 @@
+
+body{
+    height: auto;
+    margin: 42px;
+    background-image: url("../pix/screenshot.jpg");
+}
+
+a{
+background-color:transparent; 
+color: white;  
+padding: 8px;
+text-decoration: none;
+}
+a:hover{
+    background-color: #FFAF01; 
+}
+
+a:visited{
+    background-color: #FFAF01; 
+}
+
+
+#page-header{
+    display: flex;
+    background-color: orange;
+    float: right;
+}
+
+#page-header .card-body{
+    display: flex;
+    float: right;
+    background-color: orange;
+}
+#always-on-top{
+    border-top: solid #FFAF01 4px;
+    background-color: #f1f1f1;
+    display: block;
+    height: 42px;
+    align-items: center;
+}
+
+#always-on-top a{
+    color: grey;
+    font-size: 16px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+#always-on-top a img{
+    width: 100px;
+    height: 100px;
+}
+
+#nav-header{
+    height: 100px;
+    background-color: white;
+    display: block;
+}
+
+#nav-header h1{
+    text-align: center;
+    color: #03933C;
+}
+
+#nav-header .logo{
+    float: left;
+}
+#nav-header .logo img{
+    width: 100px;
+    height: 100px;
+}
+
+#nav-header .login-block{
+    float: right;
+    align-content: center;
+}
+
+#nav-bar{
+    height: 42px;
+    background-color: #3A454B;
+    display: block;
+    align-items: center;
+}
+
+
+#nav-bar .nav-bar-left{
+    float: left;
+}
+
+
+#nav-bar .nav-bar-right{
+    float: right;
+}
+
+#nav-bar .nav-bar-right img{
+    width: 24px;
+    height: auto;
+}   
+
+#slider-bar{
+    width: 100%;
+    margin:  0 auto;
+    height: 70%;
+}
+#slider-bar img{
+    width: 100%;
+    height: 30%;
+}
+
+
+#page-content{
+    background-color: white;
+}
+
+#short-info{
+display: flex;
+width: 100%;
+background-color: white;
+}
+
+#short-info .wellcome{
+    padding: 8px;
+    margin-left: 32px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 32px;
+    display: flex;
+    width: 50%;
+    background-color: #f1f2f3f4;
+    border-left: solid  #FFAF01 4px;
+}
+#short-info .video{
+    float: right;
+    width: 45%;
+}
+
+
