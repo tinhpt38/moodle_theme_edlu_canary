@@ -30,8 +30,11 @@
         DALAT UNIVERSITY
         </h1>
         <div class="login-block">
+        <!--
             <input placeholder="username">
             <input placeholder="password">
+            --> 
+                {{> theme_canary/footer }} 
         </div>
     </div>
     <!-- NAV BAR -->
@@ -70,46 +73,47 @@
     </div>
     </div>
     <!--COURSERS -->
-    <div>
-    <h1>
-    Các khoá học hiện có
-    </h1>
-    <div>
     <!-- inclue nvabar and nvabardraw -->
     <div id="page" class="container-fluid d-print-block">
       <!--  {{{ output.full_header }}} -->
         <div id="page-content" class="row pb-3 d-print-block">
             <div id="region-main-box" class="col-12">
-       
+       <!--
                 {{#hasregionmainsettingsmenu}}
                 <div id="region-main-settings-menu" class="d-print-none {{#hasblocks}}has-blocks{{/hasblocks}}">
                     <div> {{{ output.region_main_settings_menu }}} </div>
                 </div>
              
                 {{/hasregionmainsettingsmenu}}
+                -->
                 <section id="region-main" {{#hasblocks}}class="has-blocks mb-3"{{/hasblocks}} aria-label="{{#str}}content{{/str}}">
 
                     {{#hasregionmainsettingsmenu}}
                         <div class="region_main_settings_menu_proxy"></div>
                     {{/hasregionmainsettingsmenu}}
                     {{{ output.course_content_header }}}
+               
                     {{{ output.main_content }}}
+                       <!--  
                 {{{ output.activity_navigation }}}
                     {{{ output.course_content_footer }}}
-
+                    -->
                 </section>
              
                {{#hasblocks}} 
+               <!--
                  <section data-region="blocks-column" class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
                     {{{ sidepreblocks }}}
                 </section>
+                -->
                 {{/hasblocks}} 
             </div>
         </div>
     </div>
     
-   {{{ output.standard_after_main_region_html }}} 
+<!--   {{{ output.standard_after_main_region_html }}}  
     {{> theme_boost/footer }} 
+    -->
     </div>
 
 </body>

@@ -1,16 +1,19 @@
-
-{{> theme_canary/head }}
-
+{{{ output.doctype }}}
+<html {{{ output.htmlattributes }}}>
+<head>
+    <title>{{{ output.page_title }}}</title>
+    <link rel="shortcut icon" href="{{{ output.favicon }}}" />
+    {{{ output.standard_head_html }}}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
 
 <div id="page-wrapper" class="d-print-block">
 
     {{{ output.standard_top_of_body_html }}}
-
     {{> theme_canary/navbar }}
     {{> theme_canary/nav-drawer }}
-
     <div id="page" class="container-fluid d-print-block">
         {{{ output.full_header }}}
 
