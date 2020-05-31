@@ -1,91 +1,25 @@
-{{{ output.doctype }}}                                                                                                              
-<html {{{ output.htmlattributes }}}>                                                                                                
-<head>                                                                                                                              
-    <title>{{{ output.page_title }}}</title>                                                                                        
-    <link rel="shortcut icon" href="{{{ output.favicon }}}" />  
-    <!-- fix stylesheet css -->       
-    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/moodle.css">                                                             
-    {{{ output.standard_head_html }}}                                                                                               
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">                                                          
-</head>                                                                                                                             
-             
+
+{{> theme_canary/head }}
+
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
 
 <div id="page-wrapper" class="d-print-block">
 
     {{{ output.standard_top_of_body_html }}}
-    <!-- HEADER -->
-    <div id="always-on-top">
-        <a href="http://www.dlu.edu.vn/"> http://www.dlu.edu.vn/ </a>
-        <a href="https://codepsoft.com">cps</a>
-    </div>
-    <div id="nav-header">
-        <div class="logo">
-        <a href="#">
-        <img src="theme/canary/pix/logo.png">
-        </a>
-        </div>
-        <h1>
-        DALAT UNIVERSITY
-        </h1>
-        <div class="login-block">
-            <input placeholder="username">
-            <input placeholder="password">
-        </div>
-    </div>
-    <!-- NAV BAR -->
-    <div id="nav-bar">
-    <div class="nav-bar-left">
-    <a href="">DLU</a>
-    <a href="">Khoa</a>
-    <a href="">Tạo tài khoảng mới</a>
-    </div>
-    <div class="nav-bar-right">
-    <a href="">
-    <img src="theme/canary/pix/icon/search.svg">
-    </a>
-    </div>
-    </div>
-    <div id="slider-bar">   
-    <img src="theme/canary/pix/images/unnamed.png">
-    </div>
-    <!-- INFO -->
-    <div id="short-info">
-    <div class="wellcome">
-    <div>
-        <h2>
-    Chào mừng bạn đến với website học trực tuyến của trường Đại Học Đà Lạt
-    </h2>
-    </div>
-    <br>
-    <div>
-    <p>
-    “When it comes to eLearning, content means everything. If eLearning content is not masterfully designed, all the rest will just go down the drain.” - Christopher Pappas.
-    </p>
-    </div>
-    </div>
-    <div class="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/RU-SqkorruA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    </div>
-    <!--COURSERS -->
-    <div>
-    <h1>
-    Các khoá học hiện có
-    </h1>
-    <div>
-    <!-- inclue nvabar and nvabardraw -->
+
+    {{> theme_canary/navbar }}
+    {{> theme_canary/nav-drawer }}
+
     <div id="page" class="container-fluid d-print-block">
-      <!--  {{{ output.full_header }}} -->
+        {{{ output.full_header }}}
+
         <div id="page-content" class="row pb-3 d-print-block">
             <div id="region-main-box" class="col-12">
-       
                 {{#hasregionmainsettingsmenu}}
                 <div id="region-main-settings-menu" class="d-print-none {{#hasblocks}}has-blocks{{/hasblocks}}">
                     <div> {{{ output.region_main_settings_menu }}} </div>
                 </div>
-             
                 {{/hasregionmainsettingsmenu}}
                 <section id="region-main" {{#hasblocks}}class="has-blocks mb-3"{{/hasblocks}} aria-label="{{#str}}content{{/str}}">
 
@@ -94,23 +28,21 @@
                     {{/hasregionmainsettingsmenu}}
                     {{{ output.course_content_header }}}
                     {{{ output.main_content }}}
-                {{{ output.activity_navigation }}}
+                    {{{ output.activity_navigation }}}
                     {{{ output.course_content_footer }}}
 
                 </section>
-             
-               {{#hasblocks}} 
-                 <section data-region="blocks-column" class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
+                {{#hasblocks}}
+                <section data-region="blocks-column" class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
                     {{{ sidepreblocks }}}
                 </section>
-                {{/hasblocks}} 
+                {{/hasblocks}}
             </div>
         </div>
     </div>
-    
-   {{{ output.standard_after_main_region_html }}} 
-    {{> theme_boost/footer }} 
-    </div>
+    {{{ output.standard_after_main_region_html }}}
+    {{> theme_boost/footer }}
+</div>
 
 </body>
 </html>
