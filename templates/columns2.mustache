@@ -3,6 +3,7 @@
 <head>
     <title>{{{ output.page_title }}}</title>
     <!-- fix stylesheet css -->       
+    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/moodle.css">                                                             
     <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/base.css">                                                             
     <link rel="shortcut icon" href="{{{ output.favicon }}}" />
     {{{ output.standard_head_html }}}
@@ -14,7 +15,7 @@
 <div id="page-wrapper" class="d-print-block">
 
     {{{ output.standard_top_of_body_html }}}
-    {{> theme_canary/navbar }}
+    {{> theme_canary/header }}
     {{> theme_canary/nav-drawer }}
     <div id="page" class="container-fluid d-print-block">
         {{{ output.full_header }}}
