@@ -4,9 +4,16 @@
 defined('MOODLE_INTERNAL') ||die();
 
 require_once(__DIR__ . '/lib.php');
+// {{{ config.wwwroot }}}
 
 $THEME->name = 'canary';
-$THEME->sheets = ['../theme/canary/style/moodle.css'];
+$theme->fronepagecss = function($theme){
+    return theme_canary_get_precompiled_css($theme);
+};
+$THEME->sheets = [
+  $fronepagecss,  
+];
+
 $THEME->editor_sheets = [];
 // $THEME->scss = function($theme) {
 //     return theme_canary_get_main_scss_content($theme);

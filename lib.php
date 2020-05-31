@@ -87,6 +87,7 @@ function theme_canary_get_main_scss_content($theme) {
     return $scss;
 }
 
+
 /**
  * Get compiled css.
  *
