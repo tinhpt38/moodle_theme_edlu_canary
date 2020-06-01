@@ -19,31 +19,33 @@ div{
     margin-top: 50px; 
 }
 #page-wrapper {
-    background-color: #01903e;
+    background-color: greenyellow;
     height: 100%;
     display: flex;
+    flex-direction: column;} 
+#page-wrapper #page {
+    flex: 1 0 auto;
+    display: flex;
     flex-direction: column; }
-    #page-wrapper #page {
-      flex: 1 0 auto;
-      display: flex;
-      flex-direction: column; }
-      #page-wrapper #page #page-content {
-        flex: 1 0 auto; }
-    #page-wrapper #page-footer {
-      flex-shrink: 0; }
-#page_content{
+#page-wrapper #page #page-content {
+    flex: 1 0 auto; }
+#page-wrapper #page-footer {
+    flex-shrink: 0; }
+#page-content{
     flex: 1 0 auto;
 }
 #region-main{
     border: 0;
-    background-color: inherit;
     padding: 0;
     overflow-x: auto;
     overflow-y: visible;
 }  
 
 
-
+.loginpanel{
+    border-radius: 10px;
+    border: none;
+}
 .container-fluid mt-0{
     background-size: cover;
     background-position: center;
@@ -54,6 +56,11 @@ div{
     margin-right: 15px;
     margin-left: 15px;
 }
+.form{
+    padding: 20px 15px;
+    height: 350px;
+    max-height: 350px;
+}
 .col_12{
     flex: 0 0 100%;
     max-width: 100%;
@@ -62,7 +69,27 @@ div{
     padding-right: 15px;
     padding-left: 15px;
 }
+.col-md-12{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.clo-md-5{
+    flex: 0 0 41.6666666667%;
+    max-width: 41.6666666667%;
+    position: relative;
+    width: 100%;
+}
+.my-4{
+    margin-bottom: 1.5rem!important;
+    margin-top: 1.5rem!important;
+}
 .justify-content-center {
     justify-content: center!important;
+}
+.logo img{
+    max-height: 200px;
+    text-align: center;
 }
 
