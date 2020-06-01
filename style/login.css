@@ -19,10 +19,13 @@ div{
     margin-top: 50px; 
 }
 #page-wrapper {
-    background-color: greenyellow;
+    background-color: rgb(30, 143, 7);
     height: 100%;
     display: flex;
-    flex-direction: column;} 
+    flex-direction: column;
+    border-radius: 50px;
+    margin-left: 300px;
+    margin-right: 300px;} 
 #page-wrapper #page {
     flex: 1 0 auto;
     display: flex;
@@ -62,6 +65,7 @@ div{
     max-height: 350px;
 }
 .col_12{
+    margin: auto;
     flex: 0 0 100%;
     max-width: 100%;
     position: relative;
@@ -81,6 +85,14 @@ div{
     position: relative;
     width: 100%;
 }
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    background-color: #fff;
+    background-clip: border-box;
+}
 .my-4{
     margin-bottom: 1.5rem!important;
     margin-top: 1.5rem!important;
@@ -92,4 +104,6 @@ div{
     max-height: 200px;
     text-align: center;
 }
-
+.card-block{
+    background-color: rgb(30, 143, 7);
+}
