@@ -10,22 +10,25 @@ body{
 }
 *{
     box-sizing: border-box;
+    margin: auto;
 }
 div{
     display: block;
 }
 
+
+/* --------------id----------------------- */
 #page {
     margin-top: 50px; 
 }
 #page-wrapper {
-    background-color: rgb(30, 143, 7);
+    background-color: rgba(255, 255, 255, 0);
     height: 100%;
     display: flex;
     flex-direction: column;
-    border-radius: 50px;
-    margin-left: 300px;
-    margin-right: 300px;} 
+    border-radius: 15px;
+    margin-left: 300px ;
+    margin-right: 300px ;} 
 #page-wrapper #page {
     flex: 1 0 auto;
     display: flex;
@@ -45,6 +48,8 @@ div{
 }  
 
 
+
+/* -------class-------- */
 .loginpanel{
     border-radius: 10px;
     border: none;
@@ -79,9 +84,8 @@ div{
     padding-right: 15px;
     padding-left: 15px;
 }
-.clo-md-5{
+.col-md-5{
     flex: 0 0 41.6666666667%;
-    max-width: 41.6666666667%;
     position: relative;
     width: 100%;
 }
@@ -90,8 +94,21 @@ div{
     display: flex;
     flex-direction: column;
     min-width: 0;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.452);
+    border-radius: 10px;
     background-clip: border-box;
+    padding: 20px;
+    /* border: 2.5px solid green; */
+}
+.form-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+.card-header{
+    text-align: center;
 }
 .my-4{
     margin-bottom: 1.5rem!important;
@@ -104,6 +121,42 @@ div{
     max-height: 200px;
     text-align: center;
 }
-.card-block{
-    background-color: rgb(30, 143, 7);
+.mt-2,
+.sr-only,
+.forgetpass{
+    display: none;
+}
+
+
+button#loginbtn {
+    margin-top: 10px;
+    margin-left: 85px;
+    border-radius: 30px;
+}
+div.mt-3:not(.rememberpass):not(.forgetpass) {
+    display:none;
+}
+input#password,
+input#username {
+    background-color: #ffffffad;
+    border: none;
+    margin: 5px;
+    display: block;
+    padding: 8px 15px;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 8px;
+}
+input#username {
+    width: 280px;
+}
+button#loginbtn.btn-primary {
+    width: 120px;
+    height: 30px;
+    border: none;
+    background: #aaa9;
+}
+input#rememberusername {
+    margin-left: 15px;
 }
