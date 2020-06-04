@@ -60,6 +60,7 @@ a:visited{
 #nav-header h1{
     text-align: center;
     color: #03933C;
+    width: 100%;
 }
 
 #nav-header .logo{
@@ -72,11 +73,11 @@ a:visited{
 
 #nav-header .login-block{
     float: right;
-    align-content: center;
 }
 
 #nav-bar{
-    height: 42px;
+    height: 56px;
+    width: 100%;
     background-color: #3A454B;
     display: block;
     align-items: center;
@@ -96,6 +97,8 @@ a:visited{
     width: 24px;
     height: auto;
 }   
+
+
 
 #slider-bar{
     width: 100%;
@@ -132,4 +135,8 @@ background-color: white;
 #short-info .video{
     float: right;
     width: 45%;
+
+
+#region-drawer{
+    display: flex;
 }
