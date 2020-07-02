@@ -114,9 +114,8 @@ div{
 }
 .card-header{
     text-align: center;
-    padding: 10px;
-    font-size: 30px;
-    /* font-family: Helvetica; */
+    padding-bottom: 35px;
+    font-size: 40px;
     color: #059140;
 }
 .my-4{
@@ -152,19 +151,16 @@ input#username {
     border: 2.5px solid green;
     margin: 10px;
     display: block;
-    padding: 10px 15px;
+    padding: 18px 15px;
     /* border-bottom: 1px solid #eee; */
     width: 100%;
     font-size: 15px;
-    border-radius: 8px;
+    border-radius: 35px;
     width: 700px;
-}
-.rememberpass.mt-3 {
-    text-align: center;
 }
 button#loginbtn.btn-primary {
     width: 210px;
-    height: 42px;
+    height: 60px;
     border: none;
     background: #FBD467;
 }
