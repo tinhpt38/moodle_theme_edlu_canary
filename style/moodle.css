@@ -138,3 +138,86 @@ background-color: white;
 }
 
 /* B */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* ------ iconbox -------- */
+.iconbox{
+display: grid;
+grid-template-columns: auto auto auto auto;
+background-color: #FEFFFD;
+padding: 10px;
+text-align: center;
+}
+
+.iconbox  .iconcircle img{
+    margin-top: 10px;
+    text-align: center;
+}
+.iconbox  .iconcircle{
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*------ container --------*/
+.container span{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin: 40px auto;
+}
+/*------ course --------*/
+.course{
+    margin: 30px;
+}
+.course .title{
+    display: block;
+    font-size: 30px;
+    margin: 20px auto;
+}
+.course .content-course h3{
+    margin: 20px auto;
+}
+
+.course .content-course button{
+    margin: 30px 0px;
+    padding: 8px;
+    border: none;
+    background-color: #ffad00;
+    border-radius: 2px;
+    color: rgb(43, 41, 43);
+
+}
+.course .content-course button:hover{
+    color: white;
+}
+.line{
+    width: 95.5%;
+    height: 1px;
+    background-color: #d3d6d8;
+    margin: 30px 30px;
+}
+/* ----- Footer ----- */
+.footer{
+    margin: 30px;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(255, 245, 245);
+    border: 5px solid #000;
+    border-color: #ffad00;
+    border-width: 5px 0px 0px 0px;
+    background-color: #353434;
+
+}
+.footer .contact{
+float: left;
+}
+.footer .googlemap iframe{
+width: 250px;
+height: 250px;
+margin: 0px 30px;
+
+}
