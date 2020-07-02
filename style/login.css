@@ -147,14 +147,12 @@ div.mt-3:not(.rememberpass):not(.forgetpass) {
 input#password,
 input#username {
     background-color: #ffffffad;
-    /* border: none; */
     border: 2.5px solid green;
     margin: 10px;
     display: block;
-    padding: 18px 15px;
-    /* border-bottom: 1px solid #eee; */
+    padding: 14px 15px;
     width: 100%;
-    font-size: 15px;
+    font-size: 20px;
     border-radius: 35px;
     width: 700px;
 }
