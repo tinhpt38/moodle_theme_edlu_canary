@@ -72,6 +72,8 @@ $theme-colors: map-merge((
 ), $theme-colors);
 // stylelint-enable
 
+
+
 // Import FontAwesome.
 @import "fontawesome";
 
@@ -118,3 +120,11 @@ body {
 }
 
 @include bg-variant(".bg-gray", $gray-200);
+
+///CONST DEFAUL COLOR
+
+$green-main-1:    #059140 !default;
+$green-main-2: #83C125 !default;
+$green--main-3: #CBD459 !default;
+$yellow-main: #FBD467 !default;
+$red-main: #DA241B !default;
