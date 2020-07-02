@@ -95,8 +95,8 @@ div{
 .card{
     position: relative;
     display: flex;
-    width: 500px;
-    height: 300px;
+    width: 830px;
+    height: 380px;
     flex-direction: column;
     /* min-width: 0; */
     background-color: rgb(255, 255, 255);
@@ -117,7 +117,7 @@ div{
     padding: 10px;
     font-size: 30px;
     /* font-family: Helvetica; */
-    color: #03933c;
+    color: #059140;
 }
 .my-4{
     margin-bottom: 1.5rem!important;
@@ -139,7 +139,7 @@ div{
 
 button#loginbtn {
     margin-top: 10px;
-    margin-left: 160px;
+    margin-left: 260px;
     border-radius: 30px;
 }
 div.mt-3:not(.rememberpass):not(.forgetpass) {
@@ -157,14 +157,16 @@ input#username {
     width: 100%;
     font-size: 15px;
     border-radius: 8px;
-    width: 420px;
+    width: 700px;
 }
-
+.rememberpass.mt-3 {
+    text-align: center;
+}
 button#loginbtn.btn-primary {
-    width: 120px;
-    height: 30px;
+    width: 210px;
+    height: 42px;
     border: none;
-    background: #ffaf01;
+    background: #FBD467;
 }
 input#rememberusername {
     /*margin-left: 15px; */
