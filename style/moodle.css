@@ -137,7 +137,6 @@ background-color: white;
     width: 45%;
 }
 
-/* B */
 
 *{
     margin: 0px;
@@ -145,7 +144,7 @@ background-color: white;
 }
 /* ------ iconbox -------- */
 .iconbox{
-display: grid;
+display: flex;
 grid-template-columns: auto auto auto auto;
 background-color: #FEFFFD;
 padding: 10px;
