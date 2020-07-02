@@ -8,21 +8,27 @@
     {{{ output.standard_head_html }}}                                                                                               
     <meta name="viewport" content="width=device-width, initial-scale=1.0">                                                          
 </head>   
-<body>                                                                                                                          
-      <div class="row justify-content-center logo">     
+
+<body {{{ bodyattributes }}}>    
+{{> core/local/toast/wrapper}}   
+
+    <div class="row justify-content-center logo">     
     <img src="{{{ config.wwwroot }}}/theme/canary/pix/logo.png">
     </div>
-<div id="page-wrapper">
-        <div>
-        <div>   
+    
+ <div id="page-wrapper">
+    <div >
+        {{{ output.standard_top_of_body_html }}}
+    </div>
+        <div id="page-content">   
             <div>
-                <section>
+                <section id="region-main" class="col-12" aria-label="{{#str}}content{{/str}}">
                     {{{ output.main_content }}}
                 </section>
         </div>
     </div>
- 
-</div>
+
+</div> 
 
 </body>
 </html>
