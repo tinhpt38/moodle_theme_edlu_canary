@@ -3,7 +3,7 @@
 
 defined('MOODLE_INTERNAL') ||die();
 
-
+if ($ADMIN->fulltree) {
 
 $page = new admin_settingpage('theme_canary_advanced', get_string('advancedsettings', 'theme_canary'));
 
@@ -20,3 +20,5 @@ $setting->set_updatedcallback('theme_reset_all_caches');
 $page->add($setting);
 
 $settings->add($page);
+
+}
