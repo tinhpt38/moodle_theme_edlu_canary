@@ -137,14 +137,15 @@ background-color: white;
     width: 45%;
 }
 
-
 *{
     margin: 0px;
     padding: 0px;
 }
+
+
 /* ------ iconbox -------- */
 .iconbox{
-display: flex;
+display: grid;
 grid-template-columns: auto auto auto auto;
 background-color: #FEFFFD;
 padding: 10px;
