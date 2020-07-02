@@ -115,23 +115,21 @@
         <span>VIEW CONTENTS ON ALL DEVICES</span>
         <img src="theme/canary/pix/images/banner.jpg" alt="">
     </div>
-    <!-- /* ------ container end -------- */ -->
     
-     <!-- /* ------ course start -------- */ -->
-     <div class="course">
-        <span class="title">Các Khóa Học Hiện Có</span>
-        <div class="content-course">
-            <h3>Tập huấn sử dụng hệ thống E-learning</h3>
-            <button>Nhấn vào đây để truy cập khoá học</button>
+    <!--COURSERS -->
+    <div id="page" class="container-fluid d-print-block">
+        <div id="page-content" class="row pb-3 d-print-block">
+            <div id="region-main-box" class="col-12">
+                <section id="region-main" {{#hasblocks}}class="has-blocks mb-3"{{/hasblocks}} aria-label="{{#str}}content{{/str}}">
+                    {{{ output.main_content }}}
+                </section>
+             
+              
+            </div>
         </div>
     </div>
-    <!-- /* ------ course end -------- */ -->
-    <!-- /* ------ line -------- */ -->
-   <div class="line"></div>
-    <!-- /* ------ line -------- */ -->
-
-     <!-- /* ------ line -------- */ -->
-   <div class="footer">
+    
+    <div class="footer">
        <div class="contact">
         Liên hệ <br>
         Trường Đại học Đà Lạt <br>
@@ -143,46 +141,6 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.2432215874314!2d108.43941201412592!3d11.957655139550141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317112d008cff779%3A0xf3756df52e228ecf!2zNSDEkMaw4budbmcgVHLhuqduIEtow6FuaCBExrAsIFBoxrDhu51uZyA4LCBUaMOgbmggcGjhu5EgxJDDoCBM4bqhdCwgTMOibSDEkOG7k25nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1593670597182!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
        </div>
    </div>
-
-    <!--COURSERS -->
-    <!-- inclue nvabar and nvabardraw -->
-    <div id="page" class="container-fluid d-print-block">
-      <!--  {{{ output.full_header }}} -->
-        <div id="page-content" class="row pb-3 d-print-block">
-            <div id="region-main-box" class="col-12">
-       <!--
-                {{#hasregionmainsettingsmenu}}
-                <div id="region-main-settings-menu" class="d-print-none {{#hasblocks}}has-blocks{{/hasblocks}}">
-                    <div> {{{ output.region_main_settings_menu }}} </div>
-                </div>
-             
-                {{/hasregionmainsettingsmenu}}
-                -->
-                <section id="region-main" {{#hasblocks}}class="has-blocks mb-3"{{/hasblocks}} aria-label="{{#str}}content{{/str}}">
-
-                    {{#hasregionmainsettingsmenu}}
-                        <div class="region_main_settings_menu_proxy"></div>
-                    {{/hasregionmainsettingsmenu}}
-                    <!-- {{{ output.course_content_header }}} -->
-               
-                    {{{ output.main_content }}}
-                       <!--  
-                {{{ output.activity_navigation }}}
-                    {{{ output.course_content_footer }}}
-                    -->
-                </section>
-             
-               {{#hasblocks}} 
-               <!--
-                 <section data-region="blocks-column" class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
-                    {{{ sidepreblocks }}}
-                </section>
-                -->
-                {{/hasblocks}} 
-            </div>
-        </div>
-    </div>
-    
 <!--   {{{ output.standard_after_main_region_html }}}  
     {{> theme_boost/footer }} 
     -->
