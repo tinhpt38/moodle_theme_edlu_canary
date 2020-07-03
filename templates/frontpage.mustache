@@ -4,7 +4,9 @@
     <title>{{{ output.page_title }}}</title>                                                                                        
     <link rel="shortcut icon" href="{{{ output.favicon }}}" />  
     <!-- fix stylesheet css -->       
-    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/moodle.css">                                                             
+    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/moodle.css">         
+    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/base.css">   
+    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/drawer.css">                                                             
     {{{ output.standard_head_html }}}                                                                                               
     <meta name="viewport" content="width=device-width, initial-scale=1.0">                                                          
 </head>                                                                                                                             
@@ -12,45 +14,20 @@
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
 
+    {{#isloggedin}}
+        <div data-region="drawer-toggle" class="d-inline-block mr-3">
+            <button aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-light bg-gray" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">{{#pix}}i/menubars{{/pix}}<span class="sr-only">{{#str}}sidepanel, core{{/str}}</span></button>
+        </div>
+    {{/isloggedin}}
+
 <div id="page-wrapper" class="d-print-block">
 
-    <!--{{{ output.standard_top_of_body_html }}}-->
-    <!-- HEADER -->
-    <div id="always-on-top">
-        <a href="http://www.dlu.edu.vn/"> http://www.dlu.edu.vn/ </a>
-        <a href="https://codepsoft.com">cps</a>
-    </div>
-    <div id="nav-header">
-        <div class="logo">
-        <a href="#">
-        <img src="theme/canary/pix/logo.png">
-        </a>
-        </div>
-        <h1>
-        DALAT UNIVERSITY
-        </h1>
-        <div class="login-block">
-                  {{{ output.login_info }}}
-        </div>
-    </div>
-    <!-- NAV BAR -->
-    <div id="nav-bar">
-    <div class="nav-bar-left">
-    <a href="">DLU</a>
-    <a href="">Khoa</a>
-    <a href="">Tạo tài khoảng mới</a>
-    </div>
-    <div class="nav-bar-right">
-    <a href="">
-    <img src="theme/canary/pix/icon/search.svg">
-    </a>
-    </div>
-    </div>
-    <div id="slider-bar">   
-    <img src="theme/canary/pix/images/unnamed.png">
-    </div>
-    <!-- INFO -->
-    <div id="short-info">
+    {{> theme_canary/header }}
+    {{> theme_canary/nav-drawer }}
+    {{#isloggedin}}
+    {{/isloggedin}}
+    {{^isloggedin}}
+     <div id="short-info">
     <div class="wellcome">
     <div>
         <h2>
@@ -67,10 +44,7 @@
     <div class="video">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/RU-SqkorruA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-   <!-- /* ------ line -------- */ -->
     </div>
-    {{! ---------------- }}
-     <!-- /* ------ iconbox start -------- */ -->
     <div class="iconbox">
         <div class="box-1 box">
             <div class="iconcircle">
@@ -115,7 +89,8 @@
         <span>VIEW CONTENTS ON ALL DEVICES</span>
         <img src="theme/canary/pix/images/banner.jpg" alt="">
     </div>
-    
+    {{/isloggedin}}
+
     <!--COURSERS -->
     <div id="page" class="container-fluid d-print-block">
         <div id="page-content" class="row pb-3 d-print-block">
@@ -141,9 +116,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.2432215874314!2d108.43941201412592!3d11.957655139550141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317112d008cff779%3A0xf3756df52e228ecf!2zNSDEkMaw4budbmcgVHLhuqduIEtow6FuaCBExrAsIFBoxrDhu51uZyA4LCBUaMOgbmggcGjhu5EgxJDDoCBM4bqhdCwgTMOibSDEkOG7k25nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1593670597182!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
        </div>
    </div>
-<!--   {{{ output.standard_after_main_region_html }}}  
-    {{> theme_boost/footer }} 
-    -->
+ {{{ output.standard_after_main_region_html }}}  
     </div>
 
 </body>
