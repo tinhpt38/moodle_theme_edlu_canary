@@ -1,0 +1,7 @@
+.courses.frontpage-course-list-all {
+    border: 1px solid;
+}
+.coursebox .content .summary, .coursebox .content .coursecat {
+    float: left;
+    width: 55%;
+}
