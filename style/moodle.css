@@ -12,13 +12,14 @@ padding: 8px;
 text-decoration: none;
 }
 a:hover{
-    background-color: #FFAF01; 
+    color: #FFAF01; 
     text-decoration: none;
 }
 
 a:visited{
-    background-color: #FFAF01; 
+    color: #FFAF01; 
     text-decoration: none;
+
 }
 
 

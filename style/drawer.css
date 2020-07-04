@@ -6,3 +6,9 @@
     left: 0;
     z-index: 99;
 }
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #059140;
+    border-color: #059140;
+}
