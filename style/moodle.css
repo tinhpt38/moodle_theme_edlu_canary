@@ -244,5 +244,9 @@ float: left;
 width: 250px;
 height: 250px;
 margin: 0px 30px;
-
 }
+/* Images Banner */
+.container .img-banner{
+    text-align: center;
+    vertical-align: middle;
+   }
