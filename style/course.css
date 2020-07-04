@@ -1,6 +1,4 @@
-.courses.frontpage-course-list-all {
-    border: 1px solid;
-}
+
 .coursebox .content .summary, .coursebox .content .coursecat {
     float: right;
     width: 70%;
@@ -14,7 +12,7 @@ iv#yui_3_17_2_1_1593835644649_227 {
     max-height: fit-content;
 }
 .coursebox .content .teachers, .coursebox .content .courseimage, .coursebox .content .coursefile, .coursebox .content .customfields-container {
-    width: 20%;
+    width: 28%;
 }
 .content {
     width: 100%;
