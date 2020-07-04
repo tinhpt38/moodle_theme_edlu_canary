@@ -51,7 +51,7 @@ $THEME->layouts = [
     ),
     // The site home page.
     'frontpage' => array(
-        'file' => 'frontpage.php',
+        'file' => 'columns2.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
         'options' => array('nonavbar' => true),
