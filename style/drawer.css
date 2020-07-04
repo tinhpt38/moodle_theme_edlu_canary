@@ -12,3 +12,21 @@
     background-color: #059140;
     border-color: #059140;
 }
+.media-body {
+    color: black;
+}
+.media-body:hover {
+    color: #ffad00;
+}
+span.media-body.font-weight-bold {
+    color: beige;
+}
+
+.dropdown-menu.show {
+    display: block;
+    background-color: #3a454b;
+}
+a.dropdown-item.menu-action {
+    background-color: #3a454b;
+}
+
