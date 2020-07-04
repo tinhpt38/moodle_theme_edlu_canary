@@ -5,7 +5,8 @@
     <!-- fix stylesheet css -->       
     <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/moodle.css">                                                             
     <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/base.css">                                                             
-    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/drawer.css">                                                             
+    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/drawer.css">  
+    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/drash_board.css">                                                             
     <link rel="shortcut icon" href="{{{ output.favicon }}}" />
     {{{ output.standard_head_html }}}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,6 +44,7 @@
 
                 </section>
 
+    
                 {{#isloggedin}}
                 {{#hasblocks}}
                 <section data-region="blocks-column" class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
@@ -52,6 +54,7 @@
                 {{/isloggedin}}
                 {{^isloggedin}}
                 {{/isloggedin}}
+                
                 <!--
                 {{#hasblocks}}
                 <section data-region="blocks-column" class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
