@@ -13,15 +13,6 @@
 </head>
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
-{{#isloggedin}}
-<div data-region="drawer-toggle" class="d-inline-block mr-3">
-    <button aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-light" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">{{#pix}}i/menubars{{/pix}}<span class="sr-only">{{#str}}sidepanel, core{{/str}}</span>
-    <img src="{{{ config.wwwroot }}}/theme/canary/pix/images/menu.png" width="24px">
-    </button>
-</div>
-    {{/isloggedin}}
-    {{^isloggedin}}
-    {{/isloggedin}}
 <div id="page-wrapper" class="d-print-block">
 
     {{{ output.standard_top_of_body_html }}}
