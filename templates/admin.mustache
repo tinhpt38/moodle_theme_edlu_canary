@@ -6,23 +6,32 @@
     <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/moodle.css">                                                             
     <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/base.css">                                                             
     <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/drawer.css">                                                             
-    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/admin.css">   
     <link rel="shortcut icon" href="{{{ output.favicon }}}" />
     {{{ output.standard_head_html }}}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
+{{#isloggedin}}
 <div data-region="drawer-toggle" class="d-inline-block mr-3">
-    <button aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-light bg-gray" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">{{#pix}}i/menubars{{/pix}}<span class="sr-only">{{#str}}sidepanel, core{{/str}}</span></button>
+    <button aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-light" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">{{#pix}}i/menubars{{/pix}}<span class="sr-only">{{#str}}sidepanel, core{{/str}}</span>
+    <img src="{{{ config.wwwroot }}}/theme/canary/pix/images/menu.png" width="24px">
+    </button>
 </div>
+    {{/isloggedin}}
+    {{^isloggedin}}
+    {{/isloggedin}}
 <div id="page-wrapper" class="d-print-block">
 
     {{{ output.standard_top_of_body_html }}}
     {{> theme_canary/header }}
     {{> theme_canary/nav-drawer }}
     <div id="page" class="container-fluid d-print-block">
-        
+    {{#isloggedin}}
+    {{/isloggedin}}
+    {{^isloggedin}}
+    {{> theme_canary/intro }}
+    {{/isloggedin}}
 
         <div id="page-content" class="row pb-3 d-print-block">
             <div id="region-main-box" class="col-12">
@@ -38,20 +47,13 @@
                     {{/hasregionmainsettingsmenu}}
                     {{{ output.course_content_header }}}
                     {{{ output.main_content }}}
-                    {{{ output.activity_navigation }}}
                     {{{ output.course_content_footer }}}
 
                 </section>
-                {{#hasblocks}}
-                <section data-region="blocks-column" class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
-                    {{{ sidepreblocks }}}
-                </section>
-                {{/hasblocks}}
             </div>
         </div>
     </div>
     {{{ output.standard_after_main_region_html }}}
-    {{> theme_boost/footer }}
 </div>
 
 </body>
