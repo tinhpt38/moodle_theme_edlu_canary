@@ -9,56 +9,52 @@
     <link rel="shortcut icon" href="{{{ output.favicon }}}" />
     {{{ output.standard_head_html }}}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>   
+</head>
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
-
-    {{#isloggedin}}
-        <div data-region="drawer-toggle" class="d-inline-block mr-3">
-            <button aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-light bg-gray" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">{{#pix}}i/menubars{{/pix}}<span class="sr-only">{{#str}}sidepanel, core{{/str}}</span></button>
-        </div>
+{{#isloggedin}}
+<div data-region="drawer-toggle" class="d-inline-block mr-3">
+    <button aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-light" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">{{#pix}}i/menubars{{/pix}}<span class="sr-only">{{#str}}sidepanel, core{{/str}}</span>
+    <img src="{{{ config.wwwroot }}}/theme/canary/pix/images/menu.png" width="24px">
+    </button>
+</div>
     {{/isloggedin}}
-
+    {{^isloggedin}}
+    {{/isloggedin}}
 <div id="page-wrapper" class="d-print-block">
 
+    {{{ output.standard_top_of_body_html }}}
     {{> theme_canary/header }}
     {{> theme_canary/nav-drawer }}
+    <div id="page" class="container-fluid d-print-block">
     {{#isloggedin}}
     {{/isloggedin}}
     {{^isloggedin}}
     {{> theme_canary/intro }}
     {{/isloggedin}}
 
-    <!--COURSERS -->
-    <div id="page" class="container-fluid d-print-block">
         <div id="page-content" class="row pb-3 d-print-block">
             <div id="region-main-box" class="col-12">
+                {{#hasregionmainsettingsmenu}}
+                <div id="region-main-settings-menu" class="d-print-none {{#hasblocks}}has-blocks{{/hasblocks}}">
+                    <div> {{{ output.region_main_settings_menu }}} </div>
+                </div>
+                {{/hasregionmainsettingsmenu}}
                 <section id="region-main" {{#hasblocks}}class="has-blocks mb-3"{{/hasblocks}} aria-label="{{#str}}content{{/str}}">
+
+                    {{#hasregionmainsettingsmenu}}
+                        <div class="region_main_settings_menu_proxy"></div>
+                    {{/hasregionmainsettingsmenu}}
+                    {{{ output.course_content_header }}}
                     {{{ output.main_content }}}
+                    {{{ output.course_content_footer }}}
+
                 </section>
             </div>
         </div>
     </div>
-    
-    {{#isloggedin}}
-    {{> theme_boost/footer }}
-   {{/isloggedin}}
-   {{^isloggedin}}
-    <div class="footer">
-       <div class="contact">
-        Liên hệ <br>
-        Trường Đại học Đà Lạt <br>
-        01 Phù Đổng Thiên Vương, Tp. Đà Lạt, Lâm Đồng. <br>
-        Điện thoại: 0263.3822246 - Fax: 0263.3823380
-       </div>
-
-       <div class="googlemap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.2432215874314!2d108.43941201412592!3d11.957655139550141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317112d008cff779%3A0xf3756df52e228ecf!2zNSDEkMaw4budbmcgVHLhuqduIEtow6FuaCBExrAsIFBoxrDhu51uZyA4LCBUaMOgbmggcGjhu5EgxJDDoCBM4bqhdCwgTMOibSDEkOG7k25nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1593670597182!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-       </div>
-   </div>
-   {{/isloggedin}}
- {{{ output.standard_after_main_region_html }}}  
-    </div>
+    {{{ output.standard_after_main_region_html }}}
+</div>
 
 </body>
 </html>
