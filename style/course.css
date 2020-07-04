@@ -21,3 +21,6 @@ iv#yui_3_17_2_1_1593835644649_227 {
     padding: 0.5rem;
     width: 100%;
 }   
+.container {
+    float: left;
+}
