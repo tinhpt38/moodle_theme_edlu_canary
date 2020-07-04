@@ -58,7 +58,7 @@ $THEME->layouts = [
     ),
     // Server administration scripts.
     'admin' => array(
-        'file' => 'columns2.php',
+        'file' => 'admin.php',
         'regions' => array('side-pre'),
         'defaultregion' => 'side-pre',
     ),
