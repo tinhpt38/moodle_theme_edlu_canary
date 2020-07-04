@@ -4,6 +4,7 @@
 .coursebox .content .summary, .coursebox .content .coursecat {
     float: right;
     width: 70%;
+    
 }
 iv#yui_3_17_2_1_1593835644649_227 {
     position: absolute;
@@ -13,6 +14,8 @@ iv#yui_3_17_2_1_1593835644649_227 {
     max-width: 300px;
     max-height: fit-content;
 }
-.coursebox .content .teachers, .coursebox .content .courseimage, .coursebox .content .coursefile, .coursebox .content .customfields-container {
-    width: 20%;
+.coursebox .content .teachers, .coursebox .content .courseimage, .coursebox .content .coursefile, .coursebox .content .customfields-container img{
+    width: 100%;
+    display: inline;
+    position: absolute;
 }
