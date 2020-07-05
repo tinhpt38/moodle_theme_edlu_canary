@@ -2,10 +2,10 @@
 <html {{{ output.htmlattributes }}}>
 <head>
     <title>{{{ output.page_title }}}</title>
-    <!-- fix stylesheet css -->       
-    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/moodle.css">                                                             
+    <!-- fix stylesheet css -->                                                             
     <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/base.css">                                                             
-    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/drawer.css">  
+    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/drawer.css">
+    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/moodle.css">         
     <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/navigation.css">                                                             
     <link rel="shortcut icon" href="{{{ output.favicon }}}" />
     {{{ output.standard_head_html }}}
@@ -53,14 +53,6 @@
                 {{/isloggedin}}
                 {{^isloggedin}}
                 {{/isloggedin}}
-                
-                <!--
-                {{#hasblocks}}
-                <section data-region="blocks-column" class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
-                    {{{ sidepreblocks }}}
-                </section>
-                {{/hasblocks}}
-                -->
             </div>
         </div>
     </div>

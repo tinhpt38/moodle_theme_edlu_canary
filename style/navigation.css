@@ -31,7 +31,7 @@
 
 .nav-link {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
 }
 
 .nav-link:hover,
@@ -180,4 +180,20 @@
     content: "";
     background: no-repeat center center;
     background-size: 100% 100%;
+}
+
+.calendar-controls h3 {
+    color: black;
+}
+
+.card-body li a {
+    color: #6c757d;
+}
+
+.card-body li a:hover {
+    color: #03933C;
+}
+
+.card-body li a:visited {
+    color: #6c757d;
 }
