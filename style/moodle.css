@@ -1,6 +1,15 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'FrancoisOne';
+    src: url("[[font:core|fontawesome-webfont.eot]]?v=4.7.0");
+    src: url("[[font:core|fontawesome-webfont.eot]]?#iefix&v=4.7.0") format("embedded-opentype"), url("[[font:core|fontawesome-webfont.woff2]]?v=4.7.0") format("woff2"), url("[[font:core|fontawesome-webfont.woff]]?v=4.7.0") format("woff"), url("[[font:core|fontawesome-webfont.ttf]]?v=4.7.0") format("truetype"), url("[[font:core|fontawesome-webfont.svg]]?v=4.7.0#fontawesomeregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     height: auto;
-    margin: 42px;
+    margin: 44px;
     background-image: url("../pix/screenshot.jpg");
 }
 
@@ -235,7 +244,7 @@ a:visited {
 
 /* ----- Footer ----- */
 
-.footer {
+.use-footer {
     margin: 30px;
     padding: 10px;
     font-weight: bold;
@@ -246,11 +255,11 @@ a:visited {
     background-color: #353434;
 }
 
-.footer .contact {
+.use-footer .contact {
     float: left;
 }
 
-.footer .googlemap iframe {
+.use-footer .googlemap iframe {
     width: 250px;
     height: 250px;
     margin: 0px 30px;
