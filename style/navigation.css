@@ -181,3 +181,7 @@
     background: no-repeat center center;
     background-size: 100% 100%;
 }
+
+.calendar-controls h3 {
+    color: black;
+}
