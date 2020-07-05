@@ -7,6 +7,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'FrancoisOne';
+    src: url('../fonts/FrancoisOne.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -3153,6 +3160,7 @@ section {
 }
 
 body {
+    font-family: 'FrancoisOne', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: auto;
     margin: 42px;
     background-image: url("../pix/screenshot.jpg");
