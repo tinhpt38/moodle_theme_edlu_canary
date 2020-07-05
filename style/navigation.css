@@ -185,3 +185,15 @@
 .calendar-controls h3 {
     color: black;
 }
+
+.card-body li a {
+    color: #6c757d;
+}
+
+.card-body li a:hover {
+    color: #03933C;
+}
+
+.card-body li a:visited {
+    color: #6c757d;
+}
