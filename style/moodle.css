@@ -254,8 +254,6 @@ a:visited {
 /* ----- Footer ----- */
 
 .use-footer {
-    margin: 30px;
-    padding: 10px;
     font-weight: bold;
     color: rgb(255, 245, 245);
     border: 5px solid #000;
@@ -278,8 +276,10 @@ a:visited {
 /* Images Banner */
 
 .info-container {
+    width: auto;
     text-align: center;
     vertical-align: middle;
+    background-color: white;
 }
 
 .info-container img {
