@@ -5831,14 +5831,14 @@ fieldset:disabled #page-grade-grading-manage .actions a.action,
 
 .btn-primary {
     color: #fff;
-    background-color: #1177d1;
-    border-color: #1177d1;
+    background-color: #059140;
+    border-color: #059140;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0e63ae;
-    border-color: #0d5ca2;
+    background-color: #059140;
+    border-color: #059140;
 }
 
 .btn-primary:focus,
@@ -5849,16 +5849,16 @@ fieldset:disabled #page-grade-grading-manage .actions a.action,
 .btn-primary.disabled,
 .btn-primary:disabled {
     color: #fff;
-    background-color: #1177d1;
-    border-color: #1177d1;
+    background-color: #059140;
+    border-color: #059140;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #0d5ca2;
-    border-color: #0c5596;
+    background-color: #059140;
+    border-color: #059140;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
