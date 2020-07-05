@@ -51,6 +51,11 @@ a:visited {
     background-color: orange;
 }
 
+.margin-15 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 #always-on-top {
     border-top: solid #FFAF01 4px;
     background-color: #f1f1f1;
@@ -75,6 +80,8 @@ a:visited {
     height: 100px;
     background-color: white;
     display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
     align-items: center;
 }
 
@@ -260,6 +267,8 @@ a:visited {
     border-color: #ffad00;
     border-width: 5px 0px 0px 0px;
     background-color: #353434;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .use-footer .contact {
@@ -296,4 +305,11 @@ a:visited {
 
 #page {
     margin-top: 0px
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
 }
