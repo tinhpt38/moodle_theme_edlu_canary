@@ -34,5 +34,7 @@ $string['privacy:drawernavopen'] = 'The current preference for the navigation dr
 //
 
 $string['fontpageimage'] = "Image Of FrontPage";
-
 $string['fontpageimage_desc'] = "Image is going to display in fontpage when user login yet!";
+$string['configtitle'] = 'Theme of DLU - Canary';
+$string['title'] = 'Title of Theme';
+
