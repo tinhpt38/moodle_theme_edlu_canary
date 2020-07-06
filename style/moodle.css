@@ -10,7 +10,7 @@
 @font-face {
     font-family: 'FrancoisOne';
     src: url('../fonts/FrancoisOne.ttf');
-    font-weight: normal;
+    font-weight: 1.5;
     font-style: normal;
 }
 
@@ -19,6 +19,7 @@ body {
     height: auto;
     margin: 52px;
     padding: 18px;
+    line-height: normal;
     background-image: url("../pix/screenshot.jpg");
 }
 
