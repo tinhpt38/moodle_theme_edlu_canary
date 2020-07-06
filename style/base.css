@@ -3258,14 +3258,9 @@ sup {
     top: -.5em;
 }
 
-a {
-    color: #1177d1;
-    text-decoration: none;
-    background-color: transparent;
-}
 
 a:hover {
-    color: #0b4f8a;
+    color: #FFAF01;
     text-decoration: underline;
 }
 

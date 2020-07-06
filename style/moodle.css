@@ -23,6 +23,7 @@ body {
 }
 
 a {
+    color: #3a454b;
     background-color: transparent;
     padding: 8px;
     text-decoration: none;
@@ -34,7 +35,6 @@ a:hover {
 }
 
 a:visited {
-    color: #FFAF01;
     text-decoration: none;
 }
 
