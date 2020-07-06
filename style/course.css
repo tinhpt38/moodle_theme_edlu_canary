@@ -1,0 +1,47 @@
+
+.course {
+    margin: 0px;
+}
+.coursebox .content .summary, .coursebox .content .coursecat {
+    float: right;
+    width: 70%;
+}
+iv#yui_3_17_2_1_1593835644649_227 {
+    position: absolute;
+    display: contents;
+}
+.coursebox .content .courseimage img {
+    margin-top: 17px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+.coursebox .content .teachers, .coursebox .content .courseimage, .coursebox .content .coursefile, .coursebox .content .customfields-container {
+    width: 25%;
+}
+.content {
+    width: 100%;
+}
+.coursebox {
+    padding: 0.5rem;
+    width: 100%;
+}   
+.container {
+    float: left;
+}
+.btn-secondary, .btn-default {
+    color: #212529;
+    background-color: #ced4da;
+    border-color: #ced4da;
+    border-radius: 75px;
+    outline: none;
+}   
+.sitelink img {
+    width: 112px;
+    margin-left: 31px;
+}
+#page-admin-lang .generalbox, #page-admin-course-index .singlebutton, #page-admin-course-index .addcategory, #page-course-index .buttons, #page-course-index-category .buttons, #page-admin-course-category .addcategory, #page-admin-stickyblocks .generalbox, #page-admin-maintenance .buttons, #page-admin-course-index .buttons, #page-admin-course-category .buttons, #page-admin-index .copyright, #page-admin-index .copyrightnotice, #page-admin-index .adminerror .singlebutton, #page-admin-index .adminwarning .singlebutton, #page-admin-index #layout-table .singlebutton {
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
