@@ -1,5 +1,6 @@
 <?php
 
+
 defined('MOODLE_INTERNAL') || die();
 
 $templatecontext = [
@@ -9,4 +10,4 @@ $templatecontext = [
     'output' => $OUTPUT
 ];
 
-echo $OUTPUT->render_from_template('theme_canary/maintenance', $templatecontext);
+echo $OUTPUT->render_from_template('theme_boost/maintenance', $templatecontext);
