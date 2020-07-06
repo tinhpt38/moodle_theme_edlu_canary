@@ -17,7 +17,7 @@ $string['fontsize_desc'] = 'Enter a fontsize in %';
 $string['generalsettings'] = 'General settings';
 $string['nobootswatch'] = 'None';
 $string['pluginname'] = 'canary';
-$string['presetfiles'] = 'Additional theme preset files';
+$string['background'] = 'Additional theme preset files';
 $string['presetfiles_desc'] = 'Preset files can be used to dramatically alter the appearance of the theme. See <a href="https://docs.moodle.org/dev/canary_Presets">canary presets</a> for information on creating and sharing your own preset files, and see the <a href="https://archive.moodle.net/canary">Presets repository</a> for presets that others have shared.';
 $string['preset'] = 'Theme preset';
 $string['preset_desc'] = 'Pick a preset to broadly change the look of the theme.';
@@ -30,3 +30,11 @@ $string['region-side-pre'] = 'Right';
 $string['privacy:metadata:preference:draweropennav'] = 'The user\'s preference for hiding or showing the drawer menu navigation.';
 $string['privacy:drawernavclosed'] = 'The current preference for the navigation drawer is closed.';
 $string['privacy:drawernavopen'] = 'The current preference for the navigation drawer is open.';
+
+//
+
+$string['fontpageimage'] = "Image Of FrontPage";
+$string['fontpageimage_desc'] = "Image is going to display in fontpage when user login yet!";
+$string['configtitle'] = 'Theme of DLU - Canary';
+$string['title'] = 'Title of Theme';
+

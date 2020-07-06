@@ -2,9 +2,10 @@
 <html {{{ output.htmlattributes }}}>
 <head>
     <title>{{{ output.page_title }}}</title>
-    <!-- fix stylesheet css -->       
-    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/moodle.css">                                                             
+    <!-- fix stylesheet css -->                                                             
     <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/base.css">                                                             
+    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/moodle.css">         
+    <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/navigation.css">                                                             
     <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/drawer.css">        
     <link rel="stylesheet" type="text/css" href="{{{ config.wwwroot }}}/theme/canary/style/course.css">                                                     
     <link rel="shortcut icon" href="{{{ output.favicon }}}" />
@@ -53,13 +54,6 @@
                 {{/isloggedin}}
                 {{^isloggedin}}
                 {{/isloggedin}}
-                <!--
-                {{#hasblocks}}
-                <section data-region="blocks-column" class="d-print-none" aria-label="{{#str}}blocks{{/str}}">
-                    {{{ sidepreblocks }}}
-                </section>
-                {{/hasblocks}}
-                -->
             </div>
         </div>
     </div>
@@ -68,7 +62,7 @@
     {{> theme_boost/footer }}
    {{/isloggedin}}
    {{^isloggedin}}
-    <div class="footer">
+    <div class="use-footer">
        <div class="contact">
         Liên hệ <br>
         Trường Đại học Đà Lạt <br>
