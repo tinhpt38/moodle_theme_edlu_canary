@@ -167,7 +167,7 @@ a:visited {
 }
 
 #short-info .wellcome {
-    padding: 8px;
+    padding: 20px;
     margin-left: 32px;
     margin-top: 12px;
     margin-bottom: 12px;
@@ -176,9 +176,19 @@ a:visited {
     width: 50%;
     background-color: #f1f2f3f4;
     border-left: solid #FFAF01 4px;
+    display: block;
 }
 
+#short-info .wellcome p {
+   margin: 20px;
+   display: block;
+}
+
+
+
+
 #short-info .video {
+    margin: 12px;
     float: right;
     width: 45%;
 }
@@ -261,7 +271,7 @@ a:visited {
 /* ----- Footer ----- */
 
 .use-footer {
-    font-weight: bold;
+    padding: 30px;
     color: rgb(255, 245, 245);
     border: 5px solid #000;
     border-color: #ffad00;
@@ -269,6 +279,7 @@ a:visited {
     background-color: #353434;
     margin-left: 15px;
     margin-right: 15px;
+    color: white;
 }
 
 .use-footer .contact {
